@@ -41,6 +41,7 @@ main div {
 #flower {
    grid-area: flower;
    cursor: grab;
+   
 }
 
 #avatar {
