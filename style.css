@@ -15,6 +15,7 @@ main {
 nav {
     display: flex;
     justify-content: space-between;
+    background-color: rgb(33, 129, 97);
 }
 
 nav div {
@@ -80,4 +81,7 @@ img {
     main {
         background: #d825d8;
     }
+}
+footer {
+    background-color: blue;
 }
