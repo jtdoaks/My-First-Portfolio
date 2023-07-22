@@ -1,9 +1,15 @@
-main{
+main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-
- 
+    grid-template-rows: 250px 250px;
+    gap: 10px;
+    justify-items: center;
+    grid-template-areas:
+        ". avatar . "
+        "aboutMe flower contactMe"
+        "myWork . river"
 }
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -14,9 +20,46 @@ nav div {
     justify-content: space-between;
     width: 35%;
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
-  section{
-  }
+section {
+    align-self: flex-end;
+    font-size: 20px;
+}
+
+main div {
+    display: grid;
+    height: 300px;
+    margin-top: 30px;
+    border: solid blueviolet;
+    height: 183px;
+}
+
+#flower {
+   grid-area: flower;
+}
+
+#avatar {
+    grid-area: avatar;
+   
+}
+
+#river{
+    grid-area: river;
+}
+
+#aboutMe{
+    grid-area: aboutMe;
+}
+
+#myWork{
+    grid-area: myWork;
+
+}
+
+#contactMe{
+    grid-area: contactMe;
+}
